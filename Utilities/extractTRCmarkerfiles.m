@@ -33,9 +33,12 @@ pf = dir(fullfile(pwd,foldername));
 pf = pf([pf.isdir]==1); pf = pf(3:end);
 for np = 1:length(pf)
     tposefile = fullfile(pf(np).folder,[pf(np).name '_tpose.csv']);
-    
-    % deal with tpose csv files
-    extractFromCSV(tposefile,markernames,'_marker.txt',convert);
+    if(isfile(tposefile))
+        % deal with tpose csv files
+        extractFromCSV(tposefile,markernames,'_marker.txt',convert);
+    else
+        disp(['No tpose file for ' pf(np).name '.']);
+    end
     
     % subdir for each participant
     csvdir = dir(fullfile(pf(np).folder,pf(np).name,'*.csv'));
