@@ -1,6 +1,6 @@
 # ULModelPrelimValidation
 
-This is the example repository of source code used to complete the EMBC paper. A preprint of the paper can be found here.
+This is the example repository of source code used to complete the research. A preprint of the paper (submitted for EMBC 2021) can be found [here](https://www.researchgate.net/publication/350107129_Preliminary_Validation_of_Upper_Limb_Musculoskeletal_Model_using_Static_Optimization).
 
 A pre-requisite for this package is installing OpenSim with MATLAB bindings enabled. Instructions can be found [on the OpenSim github repository](https://github.com/opensim-org/opensim-core).
 
